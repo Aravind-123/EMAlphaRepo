@@ -136,7 +136,7 @@ public class CheckPoint {
 		/*case "Image":
 			xpath="//img[@id='"+ProValue1+"' or @class='"+ProValue1+"' or @name='"+ProValue1+"' or @text='"+ProValue1+"']";	
 			String src="img[src*='"+ProValue1+"']";
-			WebElement Image = null;
+			WebElement Image = null;fasdfasdfsdfdasfdsfa
 						try{
 						Image=driver.findElement(By.xpath(xpath));
 						}
