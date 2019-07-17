@@ -25,9 +25,12 @@ import java.util.concurrent.TimeUnit;
 import javax.swing.JComboBox;
 import javax.swing.JTable;
 import javax.swing.JTextField;
+<<<<<<< HEAD
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 import org.apache.poi.hssf.usermodel.HSSFCell;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
@@ -62,7 +65,11 @@ import jxl.read.biff.BiffException;
 import jxl.write.WriteException;
 
 
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 public class MainScript{
 	 //********************Variable declaration************************************
 	int ExecuteTotalRows,row = 0,col=0;
@@ -94,7 +101,11 @@ public class MainScript{
 		JavascriptExecutor jsExecutor = (JavascriptExecutor)driver;
 		HSSFWorkbook workbook = null;
 		java.util.Date date = new java.util.Date();
+<<<<<<< HEAD
 		String filePath ="Z:/Enterprise Management/Results/ReportExcel.xls";
+=======
+		String filePath ="C:/Users/aswamy4/workspace/Enterprise Management/Results/ReportExcel.xls";;
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		FileInputStream inputFile = new FileInputStream(filePath);
 		workbook = new HSSFWorkbook(inputFile);
 		HSSFSheet[] Resultsheets=ResultReporting.ReportExcel(filePath,workbook);
@@ -102,7 +113,11 @@ public class MainScript{
 		CheckPointsh=Resultsheets[1];
 		Exectimesh=Resultsheets[2];
 		String parentWindow = null;
+<<<<<<< HEAD
 		System.setProperty("webdriver.ie.driver", "Z:/IEDriverServer.exe");
+=======
+		System.setProperty("webdriver.ie.driver", "C:/Users/aswamy4/workspace/IEDriverServer.exe");
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		driver = new InternetExplorerDriver();
  	   	WebDriverWait wait = new WebDriverWait(driver,10);
  	   	WebDriverWait waitele = new WebDriverWait(driver,5);
@@ -111,18 +126,30 @@ public class MainScript{
  	   	DataFormatter formatter = new DataFormatter();
  	 try
 		{
+<<<<<<< HEAD
  		// 	String testcaseExcel="Z:/Enterprise Management/InputFiles/Build Acceptance Testing/EM_Automation_Test Case.xls";
  		String testcaseExcel="Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/EM_Automation_Test Case.xls";
  		 	TestCaseExcelIN= new FileInputStream(new File(testcaseExcel));
  		 	TestCaseWorkbookIN= new HSSFWorkbook(TestCaseExcelIN);
  		//String ScenarioExcel = "Z:/Enterprise Management/InputFiles/Build Acceptance Testing/EM_Automation_Test_Set.xls";
  		String ScenarioExcel = "Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/EM_Automation_Test_Set.xls";
+=======
+ 		 	String testcaseExcel="C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/EM_Automation_Test Case.xls";
+ 		 	TestCaseExcelIN= new FileInputStream(new File(testcaseExcel));
+ 		 	TestCaseWorkbookIN= new HSSFWorkbook(TestCaseExcelIN);
+ 		 	String ScenarioExcel = "C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/EM_Automation_Test_Set.xls";;
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			FileInputStream TestScenarioExcelIN= new FileInputStream(new File(ScenarioExcel));
             HSSFWorkbook TestScenarioWorkbookIN= new HSSFWorkbook(TestScenarioExcelIN);
             HSSFSheet TestScenarioSheetIN=TestScenarioWorkbookIN.getSheet(FolderName);
 	 		TestScenarioTotalRow=TestScenarioSheetIN.getLastRowNum();
+<<<<<<< HEAD
 	 		//loginPage(Responsibility,parentWindow,wait,"Noppadolth","sihmis","Siriraj Hospital");
 	 		loginPage(Responsibility,parentWindow,wait,"CSCCA","CSCCA","SELAYANG HOSPITALS");
+=======
+	 		loginPage(Responsibility,parentWindow,wait,"Noppadolth","sihmis","Siriraj Hospital");
+	 		//loginPage(Responsibility,parentWindow,wait,"CSCCA","CSCCA","SELAYANG HOSPITALS");
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 		for(int k=TestScenarioRow;k<=TestScenarioEndRow;k++)
 	 		{
 	 			try{
@@ -150,18 +177,29 @@ public class MainScript{
 	 				Username = TestScenarioSheetIN.getRow(TestScenarioRow).getCell(3).getStringCellValue();
 	 				if(Username==null || Username.equals(""))
 	 				{
+<<<<<<< HEAD
 	 					//Username ="Noppadolth";
 	 					Username ="CSCCA";
+=======
+	 					Username ="Noppadolth";
+	 					//Username ="CSCCA";
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 					
 	 				}
 	 				
 	 			}
+<<<<<<< HEAD
 	 			//catch(Exception e){Username ="Noppadolth";}
 	 			catch(Exception e){Username ="CSCCA";}
+=======
+	 			catch(Exception e){Username ="Noppadolth";}
+	 			//catch(Exception e){Username ="CSCCA";}
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 			try{
 	 				Password = TestScenarioSheetIN.getRow(TestScenarioRow).getCell(4).getStringCellValue();
 	 				if(Password==null || Password.equals(""))
 	 				{
+<<<<<<< HEAD
 	 					//Password ="sihmis";
 	 					Password ="CSCCA";
 	 				}
@@ -169,16 +207,34 @@ public class MainScript{
 	 			}
 	 			//catch(Exception e){Password ="sihmis";}
 	 			catch(Exception e){Password ="CSCCA";}
+=======
+	 					Password ="sihmis";
+	 					//Password ="CSCCA";
+	 				}
+	 				
+	 			}
+	 			catch(Exception e){Password ="sihmis";}
+	 			//catch(Exception e){Password ="CSCCA";}
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 			try{
 	 				Facility = TestScenarioSheetIN.getRow(TestScenarioRow).getCell(5).getStringCellValue();
 	 				if(Facility==null || Facility.equals(""))
 	 				{
+<<<<<<< HEAD
 	 					//Facility ="Siriraj Hospital";
 	 					Facility ="SELAYANG HOSPITALS";
 	 				}
 	 			}
 	 			//catch(Exception e){Facility ="Siriraj Hospital";}
 	 			catch(Exception e){Facility ="SELAYANG HOSPITALS";}
+=======
+	 					Facility ="Siriraj Hospital";
+	 					//Facility ="SELAYANG HOSPITALS";
+	 				}
+	 			}
+	 			catch(Exception e){Facility ="Siriraj Hospital";}
+	 			//catch(Exception e){Facility ="SELAYANG HOSPITALS";}
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 			
 	 			HSSFSheet TestCaseSheetIN=TestCaseWorkbookIN.getSheet(TestScenario);
 		        HSSFSheet TestCaseSheetMenu=TestCaseWorkbookIN.getSheet("Menu");
@@ -239,7 +295,11 @@ public class MainScript{
  					int winnum = Counts;
  					
  					try{
+<<<<<<< HEAD
 		 				if(Count==0 && !TestCaseSheetIN.getRow(n).getCell(2).getStringCellValue().equals("Static") && !Module.contains("Wait")&& !Module.contains("TabOut") && !Module.contains("WinClose")&& !Module.contains("ESCKey"))
+=======
+		 				if(Count==0 && !TestCaseSheetIN.getRow(n).getCell(2).getStringCellValue().equals("Static")&& !Module.contains("Wait")&& !Module.contains("TabOut") && !Module.contains("WinClose")&& !Module.contains("ESCKey"))
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	 					{
 						try{
 		 				if(TestCaseSheetIN.getRow(n).getCell(2).getStringCellValue()!= null && TestCaseSheetIN.getRow(n).getCell(4).getStringCellValue().equals("eHospital Information System"))
@@ -679,6 +739,7 @@ public class MainScript{
                              catch(Exception e)
                              { }
                         }
+<<<<<<< HEAD
                       else if(Object1.equalsIgnoreCase("PDFVerfication"))
                       {
                              try{
@@ -694,6 +755,8 @@ public class MainScript{
                              { }
                         }
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 
 	 				 else if(Object1.equalsIgnoreCase("Windowactivate"))
 	 				  {
@@ -1061,6 +1124,7 @@ public class MainScript{
                                isAlertPresent(driver);
                                Module=null;
                                }
+<<<<<<< HEAD
 						else if(Module.equalsIgnoreCase("Report_Validation"))
 	 					{
 							Report_Validation.Reports(filePath,workbook,Object1,ProValue1,wait,driver,Step_Report,CheckPointsh,Module,ModFunc,TestScenarioRow,Parameter1);
@@ -1069,6 +1133,9 @@ public class MainScript{
 						{
 						
 						}
+=======
+
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 						}
 						catch(Exception e)
 						{
@@ -1174,6 +1241,7 @@ public class MainScript{
 	public static void loginPage(String Responsibility,String parentWindow,WebDriverWait wait,String Username,String Password,String Facility) throws InterruptedException
 	{
 		try{
+<<<<<<< HEAD
 			/*if(Username==null||Username.equals(""))
 			{
 				Username="cscbl";
@@ -1183,6 +1251,17 @@ public class MainScript{
 		
 	//driver.navigate().to("http://cscdbche754:9999/HIS/eSM/jsp/login.jsp");
 	driver.navigate().to("http://cscdbche754:7777/HIS/eSM/jsp/login.jsp");
+=======
+			//if(Username==null||Username.equals(""))
+			//{
+				//Username="support";
+				//Password="support";
+				//Facility="Siriraj Hospital";
+			//}
+		
+	//driver.navigate().to("http://cscdbche754:7777/HIS/eSM/jsp/login.jsp");
+	driver.navigate().to("http://cscdbche754:9999/HIS/eSM/jsp/login.jsp ");
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	driver.findElement(By.name("name")).sendKeys(Username);
 	driver.findElement(By.name("password")).sendKeys(Password);
 	//Thread.sleep(2000);
@@ -1261,7 +1340,11 @@ public class MainScript{
     			Thread.sleep(2000);
     		 wait.until(ExpectedConditions.alertIsPresent());
     		Alert alert = driver.switchTo().alert();
+<<<<<<< HEAD
     		//alert.accept();
+=======
+    		alert.accept();
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
     		alert.dismiss();
     		
        		}
@@ -1416,7 +1499,11 @@ public class MainScript{
 	
 
 	
+<<<<<<< HEAD
 public static void WebButton(String filePath,HSSFWorkbook workbook,String locatorType, String ProValue1,WebDriverWait waitele,WebDriver driver,HSSFSheet step_Report,HSSFSheet checkPointsh,String module1,String modFunc1,String result,String comments,int TestScenarioRow,String AddProValue) throws InterruptedException, WriteException, IOException 
+=======
+public static void WebButton(String filePath,HSSFWorkbook workbook,String locatorType, String ProValue1,WebDriverWait waitele,WebDriver driver,HSSFSheet step_Report,HSSFSheet checkPointsh,String module1,String modFunc1,String result,String comments,int TestScenarioRow,String AddProValue) throws InterruptedException, WriteException, IOException, AWTException 
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 {
 	try {
 		switch (locatorType){
@@ -1438,6 +1525,7 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
 				ResultReporting.printresult(filePath,workbook,step_Report,checkPointsh,module1,modFunc1,result,comments,TestScenarioRow);
 			}
 			break;
+<<<<<<< HEAD
 		
 	case "td":
 			 WebElement element1 = null;
@@ -1449,6 +1537,19 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
 				element1=waitele.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@id='"+ProValue1+"']")));
 			}
 		    
+=======
+	case "td":
+			WebElement element1=null;;
+			try{
+		 element1=waitele.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@class='"+ProValue1+"' or @tabIndex='"+AddProValue+"']")));
+				
+	
+			}
+			catch(Exception e)
+			{
+					element1=waitele.until(ExpectedConditions.elementToBeClickable(By.xpath("//td[@id='"+ProValue1+"']")));
+			}
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
             if(element1.isDisplayed())
             {
                   JavascriptExecutor js1 = (JavascriptExecutor) driver;
@@ -1468,7 +1569,11 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
             
 		
                
+<<<<<<< HEAD
 		case "name":
+=======
+		case "name":	
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			WebElement ele3 = null;
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 		
@@ -1505,11 +1610,14 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
 					//js.executeScript("arguments[0].click();", ele3);fgh
 					js.executeScript("var elem=arguments[0]; setTimeout(function() {elem.click();}, 100)",ele3);
 				}
+<<<<<<< HEAD
 				else if(ProValue1.equals("Apply"))
 				{
 					//js.executeScript("arguments[0].click();", ele3);fgh
 					js.executeScript("var elem=arguments[0]; setTimeout(function() {elem.click();}, 100)",ele3);
 				}
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				else
 				{
 				Actions action = new Actions(driver);
@@ -1547,7 +1655,11 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
 			}
 			break;
 		case "id1":
+<<<<<<< HEAD
 			WebElement ele8=waitele.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='"+ProValue1+"' and contains(@onclick, 'to_bed_no1','selectThemeFunction.*')]")));
+=======
+			WebElement ele8=waitele.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@id='"+ProValue1+"' and contains(@onclick, 'to_bed_no1')]")));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			
 			if(ele8.isDisplayed())
 			{
@@ -1614,7 +1726,10 @@ public static void WebButton(String filePath,HSSFWorkbook workbook,String locato
 						action.doubleClick(elet).build().perform();
 						break;
 					}
+<<<<<<< HEAD
 				
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					}
 				}
 			}
@@ -1638,7 +1753,11 @@ private static Predicate<WebDriver> ExpectedConditions(Object object) {
 	System.out.println("@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@");
 	return null;
 }
+<<<<<<< HEAD
 	
+=======
+
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 public static void WebRadioGroup(String filePath,HSSFWorkbook workbook,String locatorType, String ProValue1,
 		WebDriverWait waitele,String Parameter,WebDriver driver,HSSFSheet step_Report,HSSFSheet checkPointsh,String module1,String modFunc1,String result,String comments,int TestScenarioRow) throws WriteException, IOException, InterruptedException 
 {
@@ -1876,6 +1995,10 @@ public static void WebEdit(String filePath,HSSFWorkbook workbook,String locatorT
                   ResultReporting.printresult(filePath,workbook,step_Report,checkPointsh,module1,modFunc1,result,comments,TestScenarioRow);
                   }
                   break;
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 
 		case "textarea":
 			WebElement textele1;
@@ -1974,6 +2097,7 @@ public static void WebEdit(String filePath,HSSFWorkbook workbook,String locatorT
 			comments="WebEdit not Entered";
 			ResultReporting.printresult(filePath,workbook,step_Report,checkPointsh,module1,modFunc1,result,comments,TestScenarioRow);}
 			break;
+<<<<<<< HEAD
 			
 		case "Delete":
             WebElement ele5=waitele.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@name='"+value+"']")));
@@ -2017,6 +2141,8 @@ ResultReporting.printresult(filePath,workbook,step_Report,checkPointsh,module1,m
             
 break;
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		case "maxlen":
 			try{
 				WebElement ele1 = null;
@@ -2470,6 +2596,10 @@ public static void Link(String filePath,HSSFWorkbook workbook,String locatorType
 					}
 				}
 			}
+<<<<<<< HEAD
+=======
+			
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				if(!linkval.equals(ProValue1))
 				{
 				WebElement ele5=links.get(0);
@@ -3041,4 +3171,7 @@ public static void untilJqueryIsDone(WebDriver driver, int i){
 		}
 }
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86

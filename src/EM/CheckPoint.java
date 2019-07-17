@@ -1,18 +1,27 @@
+<<<<<<< HEAD
 package EM;
 
 import java.io.BufferedInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
+=======
+package EM;check1
+
+import java.io.IOException;
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 import java.sql.Array;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+<<<<<<< HEAD
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.text.PDFTextStripper;
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 /*Description: This class File does the Validation/Verfication functionality.It does both Positive and Negative Verification*/
 
 import org.apache.poi.hssf.usermodel.HSSFSheet;
@@ -27,7 +36,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import jxl.write.WriteException;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 public class CheckPoint {
 	public static void checkpoint(String filePath,HSSFWorkbook workbook,String Object1,String ProValue1,WebDriverWait wait,WebDriver driver,HSSFSheet step_Report,HSSFSheet checkPointsh,String module1,String modFunc1,int TestScenarioRow,String Parameter1) throws WriteException, IOException
 	{
@@ -77,6 +89,7 @@ public class CheckPoint {
 				
 			}
 		break;
+<<<<<<< HEAD
 		case "PDFVerfication":
             System.out.println("size........"+driver.getWindowHandles().size());
        for(String win:driver.getWindowHandles())
@@ -112,6 +125,8 @@ public class CheckPoint {
                          }
             break;
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		
 		case "WebButton":
 			xpath="//input[@id='"+ProValue1+"' or @class='"+ProValue1+"' or @name='"+ProValue1+"' or @text='"+ProValue1+"' or @value='"+ProValue1+"']";
@@ -178,7 +193,11 @@ public class CheckPoint {
 		/*case "Image":
 			xpath="//img[@id='"+ProValue1+"' or @class='"+ProValue1+"' or @name='"+ProValue1+"' or @text='"+ProValue1+"']";	
 			String src="img[src*='"+ProValue1+"']";
+<<<<<<< HEAD
 			WebElement Image = null;
+=======
+			WebElement Image = null;fasdfasdfsdfdasfdsfadagsdgsdgsdgasgs
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 						try{
 						Image=driver.findElement(By.xpath(xpath));
 						}
@@ -267,7 +286,11 @@ public class CheckPoint {
 		{
 			wait.until(ExpectedConditions.alertIsPresent());
 			String text=driver.switchTo().alert().getText();
+<<<<<<< HEAD
 			if(text.equalsIgnoreCase(ProValue1)||text.equalsIgnoreCase(Parameter1))
+=======
+			if(text.equalsIgnoreCase(ProValue1))
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			{
 				ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","Dialog Message Exist",TestScenarioRow);
 			}
@@ -373,7 +396,10 @@ public class CheckPoint {
 
      
             break;
+<<<<<<< HEAD
             
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		case "RTEditor":
             String text=driver.switchTo().frame(0).getPageSource();
             if(text.contains(Parameter1))
@@ -433,7 +459,11 @@ public class CheckPoint {
                   {
                          String value=WebEdit.getAttribute("value");
                          String disabled=WebEdit.getAttribute("disabled");
+<<<<<<< HEAD
                          if(Parameter1.equalsIgnoreCase(value)||Parameter1.equalsIgnoreCase(disabled)||value.contains(Parameter1))
+=======
+                         if(Parameter1.equalsIgnoreCase(value)||disabled.equalsIgnoreCase(Parameter1)||value.contains(Parameter1))
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
                          {
                                 ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","WebEdit Exist",TestScenarioRow);   
                          }
@@ -709,11 +739,14 @@ case "WebButton":
 		               ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","Image does not Exist",TestScenarioRow);
 		               break;
 		        }
+<<<<<<< HEAD
 		          
 		       }
 		       else{
 		    	   ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","Image does not Exist",TestScenarioRow);
 	               break;
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		       }
 		break;
 
@@ -725,7 +758,11 @@ case "WebButton":
             xpath="//span[@id='"+ProValue1+"' or @class='"+ProValue1+"' or @linktext='"+ProValue1+"' or @text='"+ProValue1+"']";
    WebElement=driver.findElement(By.xpath(xpath));
      
+<<<<<<< HEAD
             if(Parameter1.equals(null))// Changed in 12.10.3
+=======
+            if(!(Parameter1.equals(null)))
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
             {
                   if(WebElement.isDisplayed())
                   {
@@ -739,8 +776,12 @@ case "WebButton":
             else
             {
                   String value=WebElement.getAttribute("innertext");
+<<<<<<< HEAD
                   String value1=WebElement.getText(); // Added in 12.10.3
                   if(Parameter1.equalsIgnoreCase(value)||Parameter1.equalsIgnoreCase(value1))// Changed in 12.10.3
+=======
+                  if(value.equalsIgnoreCase("innertext"))
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
                   {
                   ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"FAIL","WebElement Exist",TestScenarioRow);
                   }
@@ -749,7 +790,10 @@ case "WebButton":
                   ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","WebElement does not Exist",TestScenarioRow);
                   }
             }
+<<<<<<< HEAD
             
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
             }
             catch(Exception e){
             ResultReporting.printresultcheckpoint(filePath,workbook,step_Report,checkPointsh,module1,"PASS","WebElement does not Exist",TestScenarioRow);

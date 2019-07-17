@@ -121,7 +121,11 @@ public static void main(String[] args) {
 		final JComboBox comboBox = new JComboBox();
 	
 		//comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select", "Enhancement Setup-ON", "Enhancement Setup-OFF", "RegPack-1", "RegPack-2","CIS","Selenium Execution","CRF"}));
+<<<<<<< HEAD
 		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Build Acceptance Testing","12.9.3-12.10.1-12.10.2","12.10.1-12.10.2"}));
+=======
+		comboBox.setModel(new DefaultComboBoxModel(new String[] {"Select","CIS","Selenium Execution","CRF","Build Acceptance Testing","12.10.1"}));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		comboBox.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		comboBox.setBounds(287, 40, 180, 30);
 		panel_2.add(comboBox);
@@ -131,7 +135,11 @@ public static void main(String[] args) {
 			}
 		});
 		final JComboBox comboBox_1 = new JComboBox();
+<<<<<<< HEAD
 		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select","WebLogic-EM11XSUT","WebLogic-EMAUTSLY"}));
+=======
+		comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"Select","WebLogic-EM11XSUT"}));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		comboBox_1.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		comboBox_1.setBounds(287, 112, 180, 30);
 		panel_2.add(comboBox_1);
@@ -189,7 +197,11 @@ public static void main(String[] args) {
 			public void itemStateChanged(ItemEvent arg0) {
 			}
 		});
+<<<<<<< HEAD
 		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"Select", "Master Patient Index", "Medical Records", "Inpatient Management", "Outpatient Management", "Clinician Access", "Pharmacy Management", "Appointment Scheduling", "Materials Base","Accident and Emergency","Patient File Tracking","Operating Theatre","Inventory Management","Order Entry Reporting","Dietary Services","System Manager","CIS TRANSACTION","Duplicate Registration Check","Application master"}));
+=======
+		comboBox_2.setModel(new DefaultComboBoxModel(new String[] {"Select", "Master Patient Index", "Medical Records", "Inpatient Management", "Outpatient Management", "Clinician Access", "Pharmacy Management", "Appointment Scheduling", "Materials Base","Accident and Emergency","Patient File Tracking","Operating Theatre","Inventory Management","Order Entry and Result Reporting","Dietary Services","System Manager","CIS TRANSACTION","Duplicate Registration Check","Application master"}));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		comboBox_2.setFont(new Font("Times New Roman", Font.BOLD, 15));
 		comboBox_2.setBounds(287, 348, 180, 30);
 		panel_2.add(comboBox_2);

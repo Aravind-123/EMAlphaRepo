@@ -47,8 +47,12 @@ public class CaptureDynamicData
 		WebDriverWait waitwin=new WebDriverWait(driver,2);
 		String Flag = null;
 		evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 		//HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 		HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+		HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	    Map<String, FormulaEvaluator> workbooks = new HashMap<String, FormulaEvaluator>();
 	    workbooks.put("EM_Automation_Test Case.xls", evaluator);
 	    workbooks.put("CaptureData.xls", wbB.getCreationHelper().createFormulaEvaluator());
@@ -80,17 +84,47 @@ public class CaptureDynamicData
 			JavascriptExecutor js = (JavascriptExecutor) driver;
 			System.out.println(ee.size());
 			js.executeScript("arguments[0].click();", ee.get(ee.size()-1));
+<<<<<<< HEAD
 		break;
 		case "ESCKey":
 				Thread.sleep(2000);
+=======
+		
+			break;
+		case "ESCKey":
+				Thread.sleep(2000); 
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				Robot r=new Robot();
 				r.keyPress(KeyEvent.VK_CANCEL);
 				r.keyPress(KeyEvent.VK_ESCAPE);
 			break;
+<<<<<<< HEAD
+=======
+		case "Clickdd"://desktop dialog
+	         Robot robot = new Robot();   
+    	    robot.keyPress(KeyEvent.VK_ENTER);
+            robot.keyRelease(KeyEvent.VK_ENTER);
+      break;
+		case "Clickdd1"://desktop dialog
+			Thread.sleep(2000);
+	         Robot robot1 = new Robot();   
+   	    robot1.keyPress(KeyEvent.VK_SHIFT);
+           robot1.keyPress(KeyEvent.VK_CONTROL);
+           robot1.keyPress(KeyEvent.VK_S);
+           robot1.keyRelease(KeyEvent.VK_S);
+           robot1.keyRelease(KeyEvent.VK_CONTROL);
+           robot1.keyRelease(KeyEvent.VK_SHIFT);
+              break;
+
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		case "Wait_1M":
 			Thread.sleep(60000);
 			break;
 			
+<<<<<<< HEAD
+=======
+	
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		case "ConsentDetailsWindowactivate":
 				String win=driver.getWindowHandle();
 				JavascriptExecutor jsExecutor1 = (JavascriptExecutor)driver;
@@ -126,6 +160,7 @@ public class CaptureDynamicData
 			//action.sendKeys(body_element,Keys.TAB).perform();
 			body_element.click();
 			break;
+<<<<<<< HEAD
 		case "TabOut1":
             WebElement body_element1 = driver.findElement(By.tagName("body"));
             body_element1.click();
@@ -162,6 +197,8 @@ break;
 
 			
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	case "MP_CapturePatID":
 		try
 		{
@@ -174,8 +211,12 @@ break;
 				//SetDataToExcel("Patient ID",0,0,TestCaseWorkbookIN,TestCaseExcelIN);
 			 	SetDataToExcel(ID,0,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			 	evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				//HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 				HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks10 = new HashMap<String, FormulaEvaluator>();
 			    workbooks10.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks10.put("CaptureData.xls", wbB10.getCreationHelper().createFormulaEvaluator());
@@ -190,13 +231,21 @@ break;
 			 SetDataToExcel(ID,39,1,TestCaseWorkbookIN,TestCaseExcelIN);
 				 //evaluator(TestCaseWorkbookIN,evaluator);
 				evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				//HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 				HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks1 = new HashMap<String, FormulaEvaluator>();
 			    workbooks1.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks1.put("CaptureData.xls", wbB1.getCreationHelper().createFormulaEvaluator());
 			    evaluator.setupReferencedWorkbooks(workbooks1);
+<<<<<<< HEAD
 				 HSSFCell cell1 = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(16);
+=======
+				 HSSFCell cell1 = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(1);
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				 evaluator.evaluateFormulaCell(cell1);
 				 String value1=cell1.getStringCellValue();
 				 System.out.println("reflected ID in TestcaseSheet    "+value1);
@@ -206,8 +255,13 @@ break;
 			 SetDataToExcel(ID,40,1,TestCaseWorkbookIN,TestCaseExcelIN);
 				 //evaluator(TestCaseWorkbookIN,evaluator);
 				evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				HSSFWorkbook wbB2 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
 				//HSSFWorkbook wbB2 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
+=======
+				
+				HSSFWorkbook wbB2 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks2 = new HashMap<String, FormulaEvaluator>();
 			    workbooks2.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks2.put("CaptureData.xls", wbB2.getCreationHelper().createFormulaEvaluator());
@@ -223,8 +277,12 @@ break;
 				 //evaluator(TestCaseWorkbookIN,evaluator);
 				evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
 				
+<<<<<<< HEAD
 				//HSSFWorkbook wbB4 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 				HSSFWorkbook wbB4 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB4 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks4 = new HashMap<String, FormulaEvaluator>();
 			    workbooks4.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks4.put("CaptureData.xls", wbB4.getCreationHelper().createFormulaEvaluator());
@@ -239,8 +297,13 @@ break;
 			 SetDataToExcel(ID,42,1,TestCaseWorkbookIN,TestCaseExcelIN);
 				 //evaluator(TestCaseWorkbookIN,evaluator);
 				evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				HSSFWorkbook wbB5 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
 				//HSSFWorkbook wbB5 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
+=======
+				
+				HSSFWorkbook wbB5 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks5 = new HashMap<String, FormulaEvaluator>();
 			    workbooks5.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks5.put("CaptureData.xls", wbB5.getCreationHelper().createFormulaEvaluator());
@@ -255,8 +318,13 @@ break;
 			 SetDataToExcel(ID,43,1,TestCaseWorkbookIN,TestCaseExcelIN);
 				 //evaluator(TestCaseWorkbookIN,evaluator);
 				evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
 				//HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
+=======
+			
+				HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks6= new HashMap<String, FormulaEvaluator>();
 			    workbooks6.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks6.put("CaptureData.xls", wbB6.getCreationHelper().createFormulaEvaluator());
@@ -296,7 +364,11 @@ break;
 			System.out.println("AE_Bed_Bay_No......"+ID);
 			 SetDataToExcel(ID,46,1,TestCaseWorkbookIN,TestCaseExcelIN);
 				 evaluator(TestCaseWorkbookIN,evaluator);
+<<<<<<< HEAD
 				 HSSFCell cell = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(121);
+=======
+				 HSSFCell cell = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(120);
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				 evaluator.evaluateFormulaCell(cell);
 				 String value=cell.getStringCellValue();
 				 System.out.println("reflected ID in TestcaseSheet    "+value);
@@ -314,8 +386,12 @@ break;
 			ID=driver.findElement(By.name("visit_date_time")).getAttribute("value");
 			SetDataToExcel(ID,47,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			 evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//	HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			 HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks6= new HashMap<String, FormulaEvaluator>();
 			    workbooks6.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks6.put("CaptureData.xls", wbB6.getCreationHelper().createFormulaEvaluator());
@@ -337,8 +413,12 @@ break;
 			ID=driver.findElement(By.name("patient_id")).getAttribute("value");
 			SetDataToExcel(ID,48,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			 evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//	HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			 HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB6 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks6= new HashMap<String, FormulaEvaluator>();
 			    workbooks6.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks6.put("CaptureData.xls", wbB6.getCreationHelper().createFormulaEvaluator());
@@ -357,7 +437,10 @@ break;
 		try
 		{
 			ID=null;
+<<<<<<< HEAD
 			Window_Frame_Handling.switchToNewWindow(waitwin,2,driver,"eHospital Information System",Module);
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		 	driver.switchTo().frame("content");
 			driver.switchTo().frame("messageFrame");
 			ID=driver.findElement(By.tagName("p")).getText();
@@ -571,6 +654,10 @@ break;
 		Flag="True";
 		break;
 		
+<<<<<<< HEAD
+=======
+		
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	case "ST_STOCK_TRF_DOC_NO":
 		try
 		{
@@ -594,7 +681,10 @@ break;
 		catch(Exception e){}
 		Flag="True";
 		break;
+<<<<<<< HEAD
 		
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	case "ST_Manufacturing_Req_No":
 		try{
 			 ID=captureIDarr(ID,"P",1,":",driver);
@@ -610,6 +700,7 @@ break;
 		Flag="True";
 		break;
 	case "ST_Issue_Return_DocNo":
+<<<<<<< HEAD
 		try
 		{
 			ID=null;
@@ -630,6 +721,19 @@ break;
 				System.out.println("reflected ID in TestcaseSheet    "+value);
 		}
 		catch(Exception e){}
+=======
+		try{
+			 ID=captureIDarr(ID,"P",1,":",driver);
+			 System.out.println("ST_Issue_Return_DocNo......"+ID);
+			 SetDataToExcel(ID,13,1,TestCaseWorkbookIN,TestCaseExcelIN);
+				 evaluator(TestCaseWorkbookIN,evaluator);
+				 HSSFCell cell = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(73);
+				 evaluator.evaluateFormulaCell(cell);
+				 String value=cell.getStringCellValue();
+				 System.out.println("reflected ID in TestcaseSheet    "+value);
+				}
+			catch(Exception e){}
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		Flag="True";
 		break;
 		
@@ -740,8 +844,12 @@ break;
 			System.out.println("IP_Bed_No_Admn_Transfer......"+ID);
 			SetDataToExcel(ID,5,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks10 = new HashMap<String, FormulaEvaluator>();
 		    workbooks10.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks10.put("CaptureData.xls", wbB10.getCreationHelper().createFormulaEvaluator());
@@ -765,8 +873,12 @@ break;
 			System.out.println("IP_Bed_No_Admn......"+ID);
 			SetDataToExcel(ID,20,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks10 = new HashMap<String, FormulaEvaluator>();
 		    workbooks10.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks10.put("CaptureData.xls", wbB10.getCreationHelper().createFormulaEvaluator());
@@ -789,8 +901,12 @@ break;
 			System.out.println("IP_Child1......"+ID);
 			SetDataToExcel(ID,51,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks10 = new HashMap<String, FormulaEvaluator>();
 		    workbooks10.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks10.put("CaptureData.xls", wbB10.getCreationHelper().createFormulaEvaluator());
@@ -813,8 +929,12 @@ break;
 			System.out.println("IP_Child2......"+ID);
 			SetDataToExcel(ID,52,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 		//HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB10 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks10 = new HashMap<String, FormulaEvaluator>();
 		    workbooks10.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks10.put("CaptureData.xls", wbB10.getCreationHelper().createFormulaEvaluator());
@@ -877,8 +997,12 @@ break;
 			System.out.println("IP_Booking_Ref_No......"+ID);
 			 SetDataToExcel(ID,23,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			 evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbookss = new HashMap<String, FormulaEvaluator>();
 			    workbookss.put("EM_Automation_Test Case.xls", evaluator);
 			    workbookss.put("CaptureData.xls", wbBs.getCreationHelper().createFormulaEvaluator());
@@ -897,6 +1021,7 @@ break;
 		try
 		{
 			ID=null;
+<<<<<<< HEAD
 			Window_Frame_Handling.switchToNewWindow(waitwin,2,driver,"eHospital Information System",Module);
 		 	driver.switchTo().frame("content");
 			driver.switchTo().frame("messageFrame");
@@ -909,15 +1034,33 @@ break;
 			SetDataToExcel(AE_Disaster_PatID,24,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator(TestCaseWorkbookIN,evaluator);
 				HSSFCell cell = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(85);
+=======
+		 	driver.switchTo().frame("content");
+			driver.switchTo().frame("messageFrame");
+			ID=driver.findElement(By.tagName("P")).getText();
+			String[] iDisasPat=ID.split(" generated");
+			String iDisasPat1=iDisasPat[0];
+			String[] iDisasPat2=iDisasPat1.split("APP-AE0090 Patient ID ");
+			String AE_Disaster_PatID=iDisasPat2[1];
+			System.out.println("AE_Disaster_PatID......"+AE_Disaster_PatID);
+			SetDataToExcel(AE_Disaster_PatID,24,1,TestCaseWorkbookIN,TestCaseExcelIN);
+			evaluator(TestCaseWorkbookIN,evaluator);
+				HSSFCell cell = TestCaseWorkbookIN.getSheetAt(0).getRow(65535).getCell(1);
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				evaluator.evaluateFormulaCell(cell);
 				String value=cell.getStringCellValue();
 				System.out.println("reflected ID in TestcaseSheet    "+value);
 		}
 		catch(Exception e){}
 		Flag="True";
+<<<<<<< HEAD
 		break;	
 		
 	
+=======
+		break;
+		
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	case "OT_Booking_No":
 		try
 		{
@@ -1093,8 +1236,12 @@ break;
 			System.out.println("IP_EncounterID......"+ID);
 			SetDataToExcel(ID,38,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB1 = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks1 = new HashMap<String, FormulaEvaluator>();
 		    workbooks1.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks1.put("CaptureData.xls", wbB1.getCreationHelper().createFormulaEvaluator());
@@ -1274,12 +1421,15 @@ break;
 		Flag="True";
 		break;
 		
+<<<<<<< HEAD
 	case "Clickdd"://desktop dialog
         Robot robot = new Robot();   
    robot.keyPress(KeyEvent.VK_ENTER);
     robot.keyRelease(KeyEvent.VK_ENTER);
 break;
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	case "AE_EncounterID":
 		try{
 			ID=captureID("font",driver);
@@ -1287,8 +1437,12 @@ break;
 			//SetDataToExcel("AE_EncounterID",45,0,TestCaseWorkbookIN,TestCaseExcelIN);
 			 SetDataToExcel(ID,45,1,TestCaseWorkbookIN,TestCaseExcelIN);
 			 evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 			//HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+				HSSFWorkbook wbBs = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbookss = new HashMap<String, FormulaEvaluator>();
 			    workbookss.put("EM_Automation_Test Case.xls", evaluator);
 			    workbookss.put("CaptureData.xls", wbBs.getCreationHelper().createFormulaEvaluator());
@@ -1344,8 +1498,12 @@ break;
 		try{
 			FileInputStream inputFile = null;
 			HSSFWorkbook workbook = null;
+<<<<<<< HEAD
 			//String filePath ="Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls";
 			String filePath ="Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls";
+=======
+			String filePath ="C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls";
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			inputFile = new FileInputStream(new File(filePath));
 			workbook = new HSSFWorkbook(inputFile);
 			HSSFSheet sheet = workbook.getSheetAt(0);
@@ -1370,8 +1528,12 @@ break;
 	{
 		evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
 			
+<<<<<<< HEAD
 			//HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
 			HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
+=======
+			HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 		    Map<String, FormulaEvaluator> workbooks = new HashMap<String, FormulaEvaluator>();
 		    workbooks.put("EM_Automation_Test Case.xls", evaluator);
 		    workbooks.put("CaptureData.xls", wbB.getCreationHelper().createFormulaEvaluator());

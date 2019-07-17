@@ -12,12 +12,15 @@ import org.apache.commons.lang3.RandomStringUtils;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
+<<<<<<< HEAD
 import java.io.File;
 import java.io.IOException;
  
 import org.apache.pdfbox.pdmodel.PDDocument; 
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.text.PDFTextStripper;
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 
 public class Data_Selection {
 	
@@ -206,8 +209,12 @@ public class Data_Selection {
 				break;
 			case 2:
 				FormulaEvaluator evaluator = TestCaseWorkbookIN.getCreationHelper().createFormulaEvaluator();
+<<<<<<< HEAD
 				HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/MOHML_CRF_12.10.1/CaptureData.xls"));
 				//HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("Z:/Enterprise Management/InputFiles/Build Acceptance Testing/CaptureData.xls"));
+=======
+				HSSFWorkbook wbB = new HSSFWorkbook(new FileInputStream("C:/Users/aswamy4/workspace/Enterprise Management/InputFiles/CaptureData.xls"));
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			    Map<String, FormulaEvaluator> workbooks = new HashMap<String, FormulaEvaluator>();
 			    workbooks.put("EM_Automation_Test Case.xls", evaluator);
 			    workbooks.put("CaptureData.xls", wbB.getCreationHelper().createFormulaEvaluator());

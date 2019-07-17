@@ -33,6 +33,7 @@ public class Window_Frame_Handling {
                     driver.switchTo().frame("f_query_add_mod");
                     driver.switchTo().frame("tab_comp");
              break;
+<<<<<<< HEAD
 				case "wardacknowledgequeryframe":       
                     driver.switchTo().frame("content");
                     driver.switchTo().frame("f_query_criteria");
@@ -44,12 +45,68 @@ case "ExistingOrderSearch4":
                     driver.switchTo().frame("ExistingOrderSearch");
                     break;
 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 
 				case "main_comp1":
                     driver.switchTo().frame("f_query_add_mod");
                     driver.switchTo().frame("main_comp");
              break;
+<<<<<<< HEAD
              
+=======
+             case "f_query_details":
+                                  driver.switchTo().frame("content");    
+                                  driver.switchTo().frame("f_query_details");
+                                  break;
+                                  
+                           case "f_compound_detail":
+                                  driver.switchTo().frame("content");
+                                  driver.switchTo().frame("workAreaFrame");
+                                  driver.switchTo().frame("orderDetailFrame");
+                                  driver.switchTo().frame("mainFrame");
+                                  driver.switchTo().frame("DetailFrame");
+                                  driver.switchTo().frame("criteriaPlaceOrderFrame");
+                                  driver.switchTo().frame("f_prescription");
+                                  driver.switchTo().frame("f_compound_detail");
+                                  break;
+                                  
+                           case "f_compound_button":
+                                  driver.switchTo().frame("content");
+                                  driver.switchTo().frame("workAreaFrame");
+                                  driver.switchTo().frame("orderDetailFrame");
+                                  driver.switchTo().frame("mainFrame");
+                                  driver.switchTo().frame("DetailFrame");
+                                  driver.switchTo().frame("criteriaPlaceOrderFrame");
+                                  driver.switchTo().frame("f_prescription");
+                                  driver.switchTo().frame("f_compound_button");
+                                  break;
+                           case "f_preview_buttons3" :
+                                  driver.switchTo().frame("f_preview_buttons"); 
+                       break;
+                                  
+                           case "f_detail2":
+                                  driver.switchTo().frame("content");
+                            driver.switchTo().frame("f_query_add_mod");
+                           driver.switchTo().frame("f_tab_detail");
+                           driver.switchTo().frame("f_detail");
+                           break; 
+                      
+                               
+                          
+                             
+                            case "lookup_header" :
+                                     driver.switchTo().frame("lookup_header");
+                             break; 
+                             
+                            case "lookup_footer" :
+                                     driver.switchTo().frame("lookup_footer");
+                             break;
+				case "searchFrame1":
+                    driver.switchTo().frame("content");
+                    driver.switchTo().frame("searchFrame");
+                    break;
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				case "clinic_sub":
                     driver.switchTo().frame("content");
                     driver.switchTo().frame("f_query_add_mod");
@@ -62,16 +119,23 @@ case "ExistingOrderSearch4":
                     driver.switchTo().frame("practitioner_sub");
                     break;
                     
+<<<<<<< HEAD
 				case "unitFrame1":
+=======
+				case "unitFrame1": 
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					driver.switchTo().frame("criteria_f0"); 
 					driver.switchTo().frame("details");
                     driver.switchTo().frame("unitFrame");
                     break;
+<<<<<<< HEAD
                     
 				case "f_query_perf_mand":                                  	                                                  
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("f_query_perf_mand");
 					break; 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
                            
 				case "details_f2":
                     driver.switchTo().frame("criteria_f0"); 
@@ -139,7 +203,11 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("ChkListDetailFrame");
 					driver.switchTo().frame("RecordFrame");
 					break;
+<<<<<<< HEAD
 					
+=======
+		
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				case "f_select":
 					 driver.switchTo().frame("content");
 					 driver.switchTo().frame("resultFrame");
@@ -166,7 +234,11 @@ case "ExistingOrderSearch4":
 						driver.switchTo().frame("OTNotesSearchResultFrame");
 						break;
 
+<<<<<<< HEAD
 				case "ChkListRecordFrame":
+=======
+				case "ChkListRecordFrame1":
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 	                    driver.switchTo().frame("content");
 	              		driver.switchTo().frame("f_query_add_mod");
 	              		driver.switchTo().frame("ChkListRecordFrame");
@@ -292,9 +364,13 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("workAreaFrame");
 					driver.switchTo().frame("AssignRelationshipFrame");
 					break;
+<<<<<<< HEAD
 				case "AssignRelationshipFrame1":
 					driver.switchTo().frame("AssignRelationshipFrame");
 					break;
+=======
+					
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					
 				case "detail_frame":
 					driver.switchTo().frame(1);
@@ -391,6 +467,7 @@ case "ExistingOrderSearch4":
 						driver.switchTo().frame("menuFr");	
 				break;
 				
+<<<<<<< HEAD
 				case "content1":                                  	                                                  
 						driver.switchTo().frame("content");	
 				break;
@@ -399,6 +476,8 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("freAccMenuFr");	
 			break;
 				
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				case "patient_main":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("f_query_add_mod");
@@ -1194,7 +1273,11 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("messageFrame");
 					break;
+<<<<<<< HEAD
 					
+=======
+		
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				case "ResultReportingResult":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("workAreaFrame");
@@ -1334,11 +1417,14 @@ case "ExistingOrderSearch4":
 		            driver.switchTo().frame("f_preview_buttons"); 
 		         break;
 		         
+<<<<<<< HEAD
 				case "f_preview_buttons2" :
 					driver.switchTo().frame("f_preview_buttons"); 
 		         break;
 		         
 		         
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				case "oncology_admin" :
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("workAreaFrame");
@@ -1931,9 +2017,14 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("patientDetailsFrame");
 					break;
 					
+<<<<<<< HEAD
 				
 					case "searchCriteria":	
 			        driver.switchTo().frame("content");
+=======
+				case "searchCriteria":
+					driver.switchTo().frame("content");
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					driver.switchTo().frame("searchCriteria");
 					break;
 					
@@ -2473,11 +2564,14 @@ case "ExistingOrderSearch4":
 					driver.switchTo().frame("workAreaFrame");
 					driver.switchTo().frame("Headerpage");
 					break;
+<<<<<<< HEAD
 
 				case "Headerpage1":
 					driver.switchTo().frame("Headerpage");
 					break;
 					
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					
 				case "SignNotesCriteriaFrame":
 					driver.switchTo().frame("content");
@@ -3622,7 +3716,10 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 	          	   driver.switchTo().frame("workAreaFrame");
 	               driver.switchTo().frame("recMatConsBtnsFrame");
 	                 break;
+<<<<<<< HEAD
 	                 
+=======
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 			 case "newbornmain_frame1" :
 				 try
 				 {
@@ -3646,6 +3743,7 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 					driver.switchTo().frame("workAreaFrame");
 					driver.switchTo().frame("ResultEntryDtl");
 					break; 
+<<<<<<< HEAD
 			 case "frameStockTransferListHeader":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("f_query_add_mod");
@@ -3660,6 +3758,11 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 					break;		
 					
 			case "ResultEntryReport":
+=======
+					
+			
+			 case "ResultEntryReport":
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("workAreaFrame");
 					driver.switchTo().frame("ResultEntryReport");
@@ -3686,8 +3789,13 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("workAreaFrame");
 					driver.switchTo().frame("SpecimenOrderBtn");
+<<<<<<< HEAD
 					break;
 			 case "transfer_from":
+=======
+					break;	
+                                               case "transfer_from":
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("transfer_from");
 					break;
@@ -3701,6 +3809,7 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 					driver.switchTo().frame("content");
 					driver.switchTo().frame("transfer_criteria");
 					break;
+<<<<<<< HEAD
 					
 			 case "placeOrderDetailFrame2":
 					driver.switchTo().frame("orderDetailFrame");
@@ -3813,6 +3922,21 @@ case "RecClinicalNotesLinkHistNoteCriteriaFrame":
 
 
 						
+=======
+case "frameStockTransferListHeader":
+					driver.switchTo().frame("content");
+					driver.switchTo().frame("f_query_add_mod");
+					driver.switchTo().frame("frameStockTransferList");
+					driver.switchTo().frame("frameStockTransferListHeader");
+					break;
+			 case "frameStockTransferListDetail":
+					driver.switchTo().frame("content");
+					driver.switchTo().frame("f_query_add_mod");
+					driver.switchTo().frame("frameStockTransferList");
+					driver.switchTo().frame("frameStockTransferListDetail");
+					break;	
+			
+>>>>>>> 310e30c51b03a75e10e55ebd352c7c6a40660e86
 				default:
 					try{
 							driver.switchTo().frame(framename);
